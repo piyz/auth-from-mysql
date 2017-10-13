@@ -33,6 +33,9 @@ public class User {
                 inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles;
 
+    public User() {
+    }
+
     public User(User user) {
         this.active = user.getActive();
         this.email = user.getEmail();
